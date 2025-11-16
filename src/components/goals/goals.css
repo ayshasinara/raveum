@@ -1,0 +1,27 @@
+.goals {
+  background: #f3f2fb;
+  padding: 30px 0 10px;
+}
+
+.goals__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 24px;
+  text-align: center;
+}
+
+.goals__title {
+  margin: 0 0 20px;
+  color: #463fbf;
+  font-size: 2.5rem;
+  font-weight: 1000;
+}
+
+.goals__chips {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+

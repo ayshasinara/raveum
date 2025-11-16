@@ -1,0 +1,79 @@
+.navbar {
+  width: 100%;
+  background: linear-gradient(90deg, #1e0a54 0%, #3b10b3 100%);
+  color: #ffffff;
+}
+
+.navbar__container {
+  max-width: 100%;
+  margin: 0 50px;
+  padding: 12px 14px; /* reduced overall padding for tighter layout */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px; /* slightly reduced gap */
+  height: 20vh;
+}
+
+.navbar__brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+.navbar__logo {
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #7ad7ff, #b7f0ff);
+}
+
+.navbar__brandText {
+  font-size: 22px;
+}
+
+.navbar__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px; /* slightly reduced link spacing */
+
+}
+
+.navbar__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.9;
+}
+.navbar__link:hover {
+  opacity: 1;
+}
+
+.navbar__caret {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #ffffff;
+  opacity: 0.8;
+}
+
+.navbar__actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+@media (max-width: 900px) {
+  .navbar__links {
+    display: none;
+  }
+}
+
+

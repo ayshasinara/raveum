@@ -1,0 +1,65 @@
+.statsStrip {
+  background: linear-gradient(90deg, #1e0a54 0%, #3b10b3 100%);
+  color: rgba(255,255,255,0.9);
+  padding: 20px 0 28px;
+}
+
+.statsStrip__container {
+  max-width: 100%;
+  margin: 0 50px;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1.2fr 1.2fr repeat(4, 1fr);
+  gap: 28px;
+  align-items: center;
+}
+
+.statsStrip__left {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px 14px;
+  align-items: center;
+}
+
+.statsStrip__logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.2);
+}
+.statsStrip__logo--nwd {
+  background: linear-gradient(135deg, #cfd6ff, #f8fbff);
+}
+.statsStrip__logo--bankrate {
+  background: linear-gradient(135deg, #d7e9ff, #ffffff);
+}
+
+.statsStrip__caption {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.statsStrip__stat {
+  text-align: left;
+}
+.statsStrip__value {
+  font-size: 28px;
+  font-weight: 800;
+  color: #ffffff;
+}
+.statsStrip__label {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+@media (max-width: 1000px) {
+  .statsStrip__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+  .statsStrip__stat {
+    text-align: center;
+  }
+}
+
+

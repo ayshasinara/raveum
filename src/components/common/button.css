@@ -1,0 +1,66 @@
+.ui-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 8px;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 160ms ease, color 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+
+.ui-button--sm {
+  padding: 10px 14px;
+  font-size: 14px;
+}
+
+.ui-button--md {
+  padding: 12px 18px;
+  font-size: 15px;
+}
+
+.ui-button--primary {
+  background-color: #ffffff;
+  color: #2b0c7a;
+  border-color: #ffffff;
+}
+.ui-button--primary:hover {
+  background-color: #f5f5ff;
+  border-color: #f5f5ff;
+}
+
+.ui-button--outline {
+  background-color: transparent;
+  color: #ffffff;
+  border-color: rgba(255,255,255,0.5);
+}
+.ui-button--outline:hover {
+  border-color: #ffffff;
+  background-color: rgba(255,255,255,0.06);
+}
+
+.ui-button--outlineBrand {
+  background-color: transparent;
+  color: #463fbf;
+  border-color: #463fbf;
+}
+.ui-button--outlineBrand:hover {
+  background-color: rgba(70, 63, 191, 0.08);
+  border-color: #463fbf;
+}
+
+.ui-button--brand {
+  background-color: #463fbf;
+  color: #ffffff;
+  border-color: #463fbf;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.15);
+}
+.ui-button--brand:hover {
+  background-color: #3e37b0;
+  border-color: #3e37b0;
+}
+
+

@@ -1,0 +1,35 @@
+.cardsCarousel {
+  position: relative;
+  padding: 6px 44px; /* room for nav arrows */
+}
+.cardsCarousel__scroller {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(320px, 1fr);
+  gap: 18px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 8px;
+}
+.cardsCarousel__scroller > * {
+  scroll-snap-align: start;
+}
+.cardsCarousel__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: none;
+  background: #463fbf;
+  color: #ffffff;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 4px 12px rgba(70, 63, 191, 0.35);
+}
+.cardsCarousel__nav--left { left: 8px; }
+.cardsCarousel__nav--right { right: 8px; }
+
+
