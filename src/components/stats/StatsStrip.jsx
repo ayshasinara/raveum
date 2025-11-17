@@ -1,10 +1,11 @@
 import React from 'react';
+import Container from '../common/Container';
 import './stats.css';
 
 function StatsStrip() {
   return (
     <section className="statsStrip">
-      <div className="statsStrip__container">
+      <Container className="statsStrip__container">
         <div className="statsStrip__left">
           <div className="statsStrip__logoWrapper">
             <div className="statsStrip__logoN">N</div>
@@ -42,7 +43,7 @@ function StatsStrip() {
           <div className="statsStrip__value">4.9 ★</div>
           <div className="statsStrip__label">Google Play Store<sup>3</sup></div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

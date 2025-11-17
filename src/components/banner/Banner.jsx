@@ -1,11 +1,12 @@
 import React from 'react';
 import Button from '../common/Button';
+import Container from '../common/Container';
 import './banner.css';
 
 function Banner() {
   return (
     <section className="banner">
-      <div className="banner__container">
+      <Container className="banner__container">
         <h1 className="banner__headline">
           <span className="banner__headlineBold">Save and invest</span>
           <span className="banner__headlineScript"> for what's next.</span>
@@ -15,7 +16,7 @@ function Banner() {
             Open account
           </Button>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

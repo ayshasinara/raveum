@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../common/Button';
+import Container from '../common/Container';
 import './navbar.css';
 
 const NavLink = ({ children, withCaret = false, href = '#' }) => (
@@ -12,7 +13,7 @@ const NavLink = ({ children, withCaret = false, href = '#' }) => (
 function Navbar() {
   return (
     <nav className="navbar">
-      <div className="navbar__container">
+      <Container className="navbar__container">
         <div className="navbar__brand">
           <img 
             src="https://www.wealthfront.com/next/contenthash/next/svg/optimized/wordmark-surface-dark.contenthash.0eff70a79bddf191f2be3b9c62051ae9a9c7619e.svg" 
@@ -34,7 +35,7 @@ function Navbar() {
           <Button variant="outline" size="sm" padding="15px 25px" fontSize="16px">Log in</Button>
           <Button variant="primary" size="sm" padding="15px 25px" fontSize="16px">Get started</Button>
         </div>
-      </div>
+      </Container>
     </nav>
   );
 }

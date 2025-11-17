@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import StatsBox from '../stats/StatsBox';
+import Container from '../common/Container';
 import './testimonial.css';
 
 const testimonials = [
@@ -41,7 +42,7 @@ function Testimonial() {
 
   return (
     <section className="testimonial">
-      <div className="testimonial__container">
+      <Container className="testimonial__container">
         <div className="testimonial__left">
           <div className="testimonial__quoteMark">"</div>
           <h2 className="testimonial__headline">
@@ -90,7 +91,7 @@ function Testimonial() {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
 
       <StatsBox
         stats={[

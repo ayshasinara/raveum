@@ -1,0 +1,22 @@
+.container {
+  max-width: 100%;
+  margin: 0 var(--container-margin);
+  padding: 0 var(--container-padding);
+}
+
+.container--narrow {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+@media (max-width: 900px) {
+  .container {
+    margin: 0 var(--spacing-xl);
+  }
+  
+  .container--narrow {
+    margin: 0 var(--spacing-xl);
+  }
+}
+

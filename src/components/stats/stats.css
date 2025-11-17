@@ -1,23 +1,13 @@
-/* Common CSS Variables */
 .statsStrip {
-  --stats-text-light: #b8b5e8;
-  --stats-text-muted: #9b98c5;
-  --stats-text-white: #ffffff;
-  --stats-text-opacity: 0.9;
-  --stats-sup-size: 10px;
-  
-  background: linear-gradient(90deg, #1e0a54 0%, #3b10b3 100%);
-  color: rgba(255,255,255,0.9);
-  padding: 50px 0 28px;
+  background: linear-gradient(90deg, var(--color-bg-gradient-start) 0%, var(--color-bg-gradient-end) 100%);
+  color: var(--color-text-on-dark);
+  padding: var(--spacing-5xl) 0 var(--spacing-2xl);
 }
 
 .statsStrip__container {
-  max-width: 100%;
-  margin: 0 50px;
-  padding: 0 20px;
   display: grid;
-  grid-template-columns:2fr 2fr repeat(4, 1fr);
-  gap: 28px;
+  grid-template-columns: 2fr 2fr repeat(4, 1fr);
+  gap: var(--spacing-2xl);
   align-items: start;
 }
 
@@ -38,26 +28,26 @@
 .statsStrip__logoN {
   font-size: 32px;
   font-weight: 800;
-  color: var(--stats-text-light);
+  color: var(--color-text-light);
   line-height: 1;
 }
 
 .statsStrip__logoText {
   font-size: 18px;
   font-weight: 600;
-  color: var(--stats-text-light);
+  color: var(--color-text-light);
   line-height: 1;
 }
 
 .statsStrip__logoText--bankrate {
   font-size: 27px;
   font-weight: 500;
-  color: var(--stats-text-light);
-  margin-bottom: 6px;
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-sm);
 }
 
 .statsStrip__logoText sup {
-  font-size: var(--stats-sup-size);
+  font-size: 10px;
   vertical-align: super;
 }
 
@@ -73,12 +63,12 @@
 
 .statsStrip__caption {
   font-size: 12px;
-  color: var(--stats-text-light);
+  color: var(--color-text-light);
   line-height: 1.4;
 }
 
 .statsStrip__caption sup {
-  font-size: var(--stats-sup-size);
+  font-size: 10px;
   vertical-align: super;
 }
 
@@ -92,20 +82,20 @@
 .statsStrip__value {
   font-size: 28px;
   font-weight: 800;
-  color: var(--stats-text-light);
+  color: var(--color-text-light);
   line-height: 1;
 }
 
 .statsStrip__label {
   font-size: 14px;
-  color: var(--stats-text-light);
-  opacity: var(--stats-text-opacity);
+  color: var(--color-text-light);
+  opacity: 0.9;
 }
 
 @media (max-width: 1000px) {
   .statsStrip__container {
     grid-template-columns: 1fr 1fr;
-    gap: 18px;
+    gap: var(--spacing-lg);
   }
   .statsStrip__stat {
     text-align: center;

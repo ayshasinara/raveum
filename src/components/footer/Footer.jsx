@@ -1,4 +1,5 @@
 import React from 'react';
+import Container from '../common/Container';
 import './footer.css';
 
 function Footer() {
@@ -8,7 +9,7 @@ function Footer() {
 
   return (
     <footer className="footer">
-      <div className="footer__container">
+      <Container className="footer__container">
         <div className="footer__logo">
           <img 
             src="https://www.wealthfront.com/next/contenthash/next/svg/optimized/wordmark-surface-dark.contenthash.0eff70a79bddf191f2be3b9c62051ae9a9c7619e.svg" 
@@ -76,9 +77,9 @@ function Footer() {
             </ul>
           </div>
         </div>
-      </div>
+      </Container>
       <div className="footer__divider"></div>
-      <div className="footer__disclaimer">
+      <Container className="footer__disclaimer">
         <p className="footer__disclaimerText">
           *Rate comparison based on Freddie Mac Primary Mortgage Market Survey® average for 30-year fixed-rate mortgages as of October 16, 2025. Rate available to qualified borrowers meeting the following criteria: 780+ FICO score, $750,000 purchase price, primary single-family residence in Austin, TX, 20% down payment, and payment of 1 discount point. Actual rates may vary. APR and additional terms apply. Not all borrowers will qualify.
         </p>
@@ -139,7 +140,7 @@ function Footer() {
         <p className="footer__disclaimerText">
           © 2025 Wealthfront Corporation. All rights reserved.
         </p>
-      </div>
+      </Container>
     </footer>
   );
 }

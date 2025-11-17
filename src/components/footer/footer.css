@@ -1,16 +1,13 @@
 .footer {
-  background-color: #19172c;
-  color: #ffffff;
-  padding: 60px 0 40px;
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-white);
+  padding: var(--spacing-6xl) 0 var(--spacing-4xl);
 }
 
 .footer__container {
-  max-width: 100%;
-  margin: 0 50px;
-  padding: 0 20px;
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 80px;
+  gap: var(--spacing-7xl);
   align-items: start;
 }
 
@@ -39,7 +36,7 @@
 .footer__heading {
   font-size: 16px;
   font-weight: 600;
-  color: #ffffff;
+  color: var(--color-text-white);
   margin: 0;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -51,19 +48,19 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: var(--spacing-md);
 }
 
 .footer__link {
   font-size: 15px;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--color-text-on-dark);
   text-decoration: none;
-  transition: color 0.2s ease;
+  transition: color var(--transition-base);
   display: inline-block;
 }
 
 .footer__link:hover {
-  color: #ffffff;
+  color: var(--color-text-white);
 }
 
 .footer__link--underlined {
@@ -72,22 +69,20 @@
 
 .footer__divider {
   max-width: 100%;
-  margin: 40px 50px 0;
+  margin: var(--spacing-4xl) var(--container-margin) 0;
   height: 1px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: var(--color-border-light);
 }
 
 .footer__disclaimer {
-  max-width: 100%;
-  margin: 30px 50px 0;
-  padding: 0 20px 40px;
+  padding: var(--spacing-3xl) 0 var(--spacing-4xl);
 }
 
 .footer__disclaimerText {
   font-size: 10px;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.7);
-  margin: 0 0 16px;
+  margin: 0 0 var(--spacing-lg);
 }
 
 .footer__disclaimerText:last-child {
@@ -102,11 +97,11 @@
 .footer__disclaimerLink {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: underline;
-  transition: color 0.2s ease;
+  transition: color var(--transition-base);
 }
 
 .footer__disclaimerLink:hover {
-  color: rgba(255, 255, 255, 1);
+  color: var(--color-text-white);
 }
 
 @media (max-width: 1200px) {
@@ -119,17 +114,16 @@
 @media (max-width: 900px) {
   .footer__container {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: var(--spacing-4xl);
   }
 
   .footer__links {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: var(--spacing-4xl);
   }
 
   .footer__disclaimer {
-    margin: 30px 20px 0;
-    padding: 0 10px 40px;
+    padding: var(--spacing-3xl) 0 var(--spacing-4xl);
   }
 
   .footer__disclaimerText {

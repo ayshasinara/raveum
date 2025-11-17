@@ -1,11 +1,12 @@
 import React from 'react';
 import Button from '../common/Button';
+import Container from '../common/Container';
 import './hero.css';
 
 function Hero() {
   return (
     <section className="hero">
-      <div className="hero__container">
+      <Container className="hero__container">
         <div className="hero__left">
           <p className="hero__eyebrow">New clients earn</p>
           <h1 className="hero__title">4.15% APY</h1>
@@ -35,7 +36,7 @@ function Hero() {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

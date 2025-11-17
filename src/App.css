@@ -1,8 +1,5 @@
-:root {
-  --bg-start: #1e0a54;
-  --bg-end: #3b10b3;
-  --text-on-dark: #ffffff;
-}
+@import './styles/variables.css';
+@import './styles/utilities.css';
 
 * {
   box-sizing: border-box;
@@ -14,11 +11,11 @@ html, body, #root {
 
 body {
   margin: 0;
-  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  color: #111;
-  background-color: #fff;
-
+  font-family: var(--font-family-base);
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-white);
 }
+
 nav {
   margin: 0;
   padding: 0;

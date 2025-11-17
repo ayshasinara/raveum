@@ -1,11 +1,12 @@
 import React from 'react';
 import Accordion from '../accordion/Accordion';
+import Container from '../common/Container';
 import './faq.css';
 
 function FAQ() {
   return (
     <section className="faq">
-      <div className="faq__container">
+      <Container className="faq__container">
         <div className="faq__left">
           <h2 className="faq__title">Questions? 5 <br /> things to know in 5 <br /> minutes or less.</h2>
           <p className="faq__description">
@@ -39,7 +40,7 @@ function FAQ() {
           }
         ]} />
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

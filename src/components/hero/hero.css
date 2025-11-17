@@ -1,17 +1,14 @@
 .hero {
-  background: linear-gradient(90deg, #1e0a54 0%, #3b10b3 100%);
-  color: #ffffff;
-  padding: 56px 0 24px;
+  background: linear-gradient(90deg, var(--color-bg-gradient-start) 0%, var(--color-bg-gradient-end) 100%);
+  color: var(--color-text-white);
+  padding: 56px 0 var(--spacing-2xl);
 }
 
 .hero__container {
-  max-width: 100%;
-  margin: 0 50px;
-  padding: 0 20px;
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   align-items: center;
-  gap: 24px;
+  gap: var(--spacing-2xl);
 }
 
 .hero__left {

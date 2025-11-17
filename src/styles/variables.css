@@ -1,0 +1,65 @@
+:root {
+  /* Colors - Primary */
+  --color-primary: #3f3490;
+  --color-primary-dark: #352a7a;
+  --color-primary-light: #463fbf;
+  --color-primary-hover: rgba(63, 52, 144, 0.08);
+  
+  /* Colors - Backgrounds */
+  --color-bg-gradient-start: #1e0a54;
+  --color-bg-gradient-end: #3b10b3;
+  --color-bg-dark: #19172c;
+  --color-bg-light: #f3f2fb;
+  --color-bg-white: #ffffff;
+  --color-bg-banner: #2d1867;
+  
+  /* Colors - Text */
+  --color-text-primary: #2e2e48;
+  --color-text-secondary: #32324d;
+  --color-text-muted: #666;
+  --color-text-white: #ffffff;
+  --color-text-light: #b8b5e8;
+  --color-text-on-dark: rgba(255, 255, 255, 0.9);
+  
+  /* Colors - Borders & Shadows */
+  --color-border-light: rgba(255, 255, 255, 0.2);
+  --color-border-muted: #e0e0e0;
+  --color-shadow-sm: rgba(15, 10, 42, 0.08);
+  --color-shadow-md: rgba(15, 10, 42, 0.15);
+  --color-shadow-lg: rgba(0, 0, 0, 0.15);
+  
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-xl: 20px;
+  --spacing-2xl: 24px;
+  --spacing-3xl: 36px;
+  --spacing-4xl: 40px;
+  --spacing-5xl: 50px;
+  --spacing-6xl: 60px;
+  --spacing-7xl: 80px;
+  
+  /* Container */
+  --container-margin: 50px;
+  --container-padding: 20px;
+  --container-max-width: 1200px;
+  
+  /* Typography */
+  --font-family-base: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  --font-family-script: 'Brush Script MT', 'Lucida Handwriting', 'Georgia', serif;
+  
+  /* Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 18px;
+  --radius-full: 999px;
+  
+  /* Transitions */
+  --transition-fast: 160ms ease;
+  --transition-base: 0.2s ease;
+  --transition-slow: 0.3s ease;
+}
+

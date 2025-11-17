@@ -1,0 +1,40 @@
+.section {
+  width: 100%;
+}
+
+.section--padding-xs {
+  padding: var(--spacing-2xl) 0;
+}
+
+.section--padding-sm {
+  padding: var(--spacing-4xl) 0;
+}
+
+.section--padding-md {
+  padding: var(--spacing-5xl) 0;
+}
+
+.section--padding-lg {
+  padding: var(--spacing-7xl) 0;
+}
+
+.section--bg-gradient {
+  background: linear-gradient(90deg, var(--color-bg-gradient-start) 0%, var(--color-bg-gradient-end) 100%);
+}
+
+.section--bg-light {
+  background-color: var(--color-bg-light);
+}
+
+.section--bg-white {
+  background-color: var(--color-bg-white);
+}
+
+.section--bg-dark {
+  background-color: var(--color-bg-dark);
+}
+
+.section--bg-banner {
+  background-color: var(--color-bg-banner);
+}
+

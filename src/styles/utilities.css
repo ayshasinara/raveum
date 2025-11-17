@@ -1,0 +1,134 @@
+/* Container Utility */
+.container {
+  max-width: 100%;
+  margin: 0 var(--container-margin);
+  padding: 0 var(--container-padding);
+}
+
+.container--narrow {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+/* Section Utility */
+.section {
+  width: 100%;
+}
+
+.section--padding-sm {
+  padding: var(--spacing-4xl) 0;
+}
+
+.section--padding-md {
+  padding: var(--spacing-5xl) 0;
+}
+
+.section--padding-lg {
+  padding: var(--spacing-7xl) 0;
+}
+
+/* Grid Utilities */
+.grid {
+  display: grid;
+}
+
+.grid--2cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Flex Utilities */
+.flex {
+  display: flex;
+}
+
+.flex--column {
+  flex-direction: column;
+}
+
+.flex--center {
+  align-items: center;
+  justify-content: center;
+}
+
+.flex--between {
+  justify-content: space-between;
+}
+
+.flex--gap-sm {
+  gap: var(--spacing-sm);
+}
+
+.flex--gap-md {
+  gap: var(--spacing-md);
+}
+
+.flex--gap-lg {
+  gap: var(--spacing-lg);
+}
+
+.flex--gap-xl {
+  gap: var(--spacing-xl);
+}
+
+/* Text Utilities */
+.text--center {
+  text-align: center;
+}
+
+.text--left {
+  text-align: left;
+}
+
+.text--white {
+  color: var(--color-text-white);
+}
+
+.text--primary {
+  color: var(--color-primary);
+}
+
+.text--muted {
+  color: var(--color-text-muted);
+}
+
+/* Background Utilities */
+.bg--gradient {
+  background: linear-gradient(90deg, var(--color-bg-gradient-start) 0%, var(--color-bg-gradient-end) 100%);
+}
+
+.bg--light {
+  background-color: var(--color-bg-light);
+}
+
+.bg--white {
+  background-color: var(--color-bg-white);
+}
+
+.bg--dark {
+  background-color: var(--color-bg-dark);
+}
+
+/* Responsive Utilities */
+@media (max-width: 900px) {
+  .container {
+    margin: 0 var(--spacing-xl);
+  }
+  
+  .container--narrow {
+    margin: 0 var(--spacing-xl);
+  }
+  
+  .grid--responsive {
+    grid-template-columns: 1fr !important;
+  }
+}
+

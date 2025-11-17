@@ -1,12 +1,9 @@
 .faq {
-  background: #ffffff;
-  padding: 80px 0;
+  background: var(--color-bg-white);
+  padding: var(--spacing-7xl) 0;
 }
 
 .faq__container {
-  max-width: 100%;
-  margin: 0 50px;
-  padding: 0 20px;
   display: grid;
   grid-template-columns: 1fr 1.2fr;
   gap: 100px;
@@ -20,26 +17,27 @@
 .faq__title {
   font-size: 3rem;
   font-weight: 800;
-  color: #3f3490;
-  margin: 0 0 20px;
+  color: var(--color-primary);
+  margin: 0 0 var(--spacing-xl);
   line-height: 1.2;
 }
 
 .faq__description {
   font-size: 16px;
-  color: #2e2e48;
+  color: var(--color-text-primary);
   line-height: 1.6;
   margin: 0;
 }
 
 .faq__link {
-    color: #2e2e48;
+  color: var(--color-text-primary);
   text-decoration: underline;
   cursor: pointer;
+  transition: color var(--transition-base);
 }
 
 .faq__link:hover {
-  color: #3f3490;
+  color: var(--color-primary);
 }
 
 .faq__right {
@@ -50,7 +48,7 @@
 @media (max-width: 900px) {
   .faq__container {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: var(--spacing-4xl);
   }
 
   .faq__left {

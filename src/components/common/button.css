@@ -23,9 +23,9 @@
 }
 
 .ui-button--primary {
-  background-color: #ffffff;
+  background-color: var(--color-bg-white);
   color: #2b0c7a;
-  border-color: #ffffff;
+  border-color: var(--color-bg-white);
 }
 .ui-button--primary:hover {
   background-color: #f5f5ff;
@@ -34,44 +34,44 @@
 
 .ui-button--outline {
   background-color: transparent;
-  color: #ffffff;
+  color: var(--color-text-white);
   border-color: rgba(255,255,255,0.5);
 }
 .ui-button--outline:hover {
-  border-color: #ffffff;
+  border-color: var(--color-text-white);
   background-color: rgba(255,255,255,0.06);
 }
 
 .ui-button--outlineBrand {
   background-color: transparent;
-  color: #3f3490;
-  border-color: #3f3490;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
 }
 .ui-button--outlineBrand:hover {
-  background-color: rgba(63, 52, 144, 0.08);
-  border-color: #3f3490;
+  background-color: var(--color-primary-hover);
+  border-color: var(--color-primary);
 }
 
 .ui-button--brand {
-  background-color: #3f3490;
-  color: #ffffff;
-  border-color: #3f3490;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.15);
+  background-color: var(--color-primary);
+  color: var(--color-text-white);
+  border-color: var(--color-primary);
+  box-shadow: 0 1px 0 var(--color-shadow-lg);
 }
 .ui-button--brand:hover {
-  background-color: #352a7a;
-  border-color: #352a7a;
+  background-color: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
 }
 
 .ui-button--banner {
-  background-color: #3f3490;
-  color: #ffffff;
-  border-color: #3f3490;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.15);
+  background-color: var(--color-primary);
+  color: var(--color-text-white);
+  border-color: var(--color-primary);
+  box-shadow: 0 1px 0 var(--color-shadow-lg);
 }
 .ui-button--banner:hover {
-  background-color: #352a7a;
-  border-color: #352a7a;
+  background-color: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
 }
 
 
