@@ -1,0 +1,89 @@
+.banner {
+  background: #2d1867;
+  color: #ffffff;
+  padding: 50px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 1px 1px, rgba(255,255,255,0.15) 1px, transparent 0);
+  background-size: 20px 20px;
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.banner::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.2), transparent);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.banner__container {
+  max-width: 100%;
+  margin: 0 50px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.banner__headline {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin: 0 0 40px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.banner__headlineBold {
+  font-weight: 800;
+  font-family: system-ui, -apple-system, sans-serif;
+  display: inline-block;
+}
+
+.banner__headlineScript {
+  font-weight: 300;
+  font-style: italic;
+  font-family: 'Brush Script MT', 'Lucida Handwriting', 'Georgia', serif;
+  display: inline-block;
+  margin-left: 8px;
+  letter-spacing: 0.5px;
+}
+
+.banner__cta {
+  margin-top: 20px;
+}
+
+@media (max-width: 900px) {
+  .banner {
+    padding: 80px 0;
+  }
+
+  .banner__headline {
+    font-size: 2.5rem;
+  }
+
+  .banner__container {
+    margin: 0 20px;
+  }
+}
+

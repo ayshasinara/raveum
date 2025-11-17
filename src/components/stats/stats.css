@@ -1,7 +1,14 @@
+/* Common CSS Variables */
 .statsStrip {
+  --stats-text-light: #b8b5e8;
+  --stats-text-muted: #9b98c5;
+  --stats-text-white: #ffffff;
+  --stats-text-opacity: 0.9;
+  --stats-sup-size: 10px;
+  
   background: linear-gradient(90deg, #1e0a54 0%, #3b10b3 100%);
   color: rgba(255,255,255,0.9);
-  padding: 20px 0 28px;
+  padding: 50px 0 28px;
 }
 
 .statsStrip__container {
@@ -9,16 +16,49 @@
   margin: 0 50px;
   padding: 0 20px;
   display: grid;
-  grid-template-columns: 1.2fr 1.2fr repeat(4, 1fr);
+  grid-template-columns:2fr 2fr repeat(4, 1fr);
   gap: 28px;
-  align-items: center;
+  align-items: start;
 }
 
 .statsStrip__left {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.statsStrip__logoWrapper {
+  display: flex;
   align-items: center;
+  
+  gap: 8px;
+}
+
+.statsStrip__logoN {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--stats-text-light);
+  line-height: 1;
+}
+
+.statsStrip__logoText {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--stats-text-light);
+  line-height: 1;
+}
+
+.statsStrip__logoText--bankrate {
+  font-size: 27px;
+  font-weight: 500;
+  color: var(--stats-text-light);
+  margin-bottom: 6px;
+}
+
+.statsStrip__logoText sup {
+  font-size: var(--stats-sup-size);
+  vertical-align: super;
 }
 
 .statsStrip__logo {
@@ -27,29 +67,39 @@
   border-radius: 8px;
   background: rgba(255,255,255,0.2);
 }
-.statsStrip__logo--nwd {
-  background: linear-gradient(135deg, #cfd6ff, #f8fbff);
-}
 .statsStrip__logo--bankrate {
   background: linear-gradient(135deg, #d7e9ff, #ffffff);
 }
 
 .statsStrip__caption {
-  font-size: 14px;
-  opacity: 0.9;
+  font-size: 12px;
+  color: var(--stats-text-light);
+  line-height: 1.4;
+}
+
+.statsStrip__caption sup {
+  font-size: var(--stats-sup-size);
+  vertical-align: super;
 }
 
 .statsStrip__stat {
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
 }
+
 .statsStrip__value {
   font-size: 28px;
   font-weight: 800;
-  color: #ffffff;
+  color: var(--stats-text-light);
+  line-height: 1;
 }
+
 .statsStrip__label {
   font-size: 14px;
-  opacity: 0.9;
+  color: var(--stats-text-light);
+  opacity: var(--stats-text-opacity);
 }
 
 @media (max-width: 1000px) {

@@ -8,7 +8,9 @@ function Button({
   onClick,
   as = 'button',
   href,
-  className = ''
+  className = '',
+  padding,
+  fontSize
 }) {
   const Tag = as === 'a' ? 'a' : 'button';
 
@@ -26,8 +28,12 @@ function Button({
       ? { href }
       : { type: 'button' };
 
+  const style = {};
+  if (padding) style.padding = padding;
+  if (fontSize) style.fontSize = fontSize;
+
   return (
-    <Tag className={classes} onClick={onClick} {...sharedProps}>
+    <Tag className={classes} onClick={onClick} style={style} {...sharedProps}>
       {children}
     </Tag>
   );

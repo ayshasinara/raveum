@@ -6,6 +6,10 @@ import StatsStrip from '../components/stats/StatsStrip'
 import Goals from '../components/goals/Goals'
 import CardsCarousel from '../components/cards/CardsCarousel'
 import ProductCard from '../components/cards/ProductCard'
+import Testimonial from '../components/testimonial/Testimonial'
+import Banner from '../components/banner/Banner'
+import FAQ from '../components/faq/FAQ'
+import Footer from '../components/footer/Footer'
 
 function home() {
   return (
@@ -14,8 +18,6 @@ function home() {
       <Hero />
       < StatsStrip/>
       <Goals />
-
-     
       <FeatureSection
         eyebrow="Cash Account"
         title="Earn more interest on your cash"
@@ -56,6 +58,7 @@ function home() {
         image={<img alt="Cash account preview" src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?q=80&w=1200&auto=format&fit=crop" />}
       />
       <Goals/>
+     
       <div style={{ padding: '20px 20px 40px' }}>
       <CardsCarousel>
           <ProductCard
@@ -78,7 +81,10 @@ function home() {
           />
         </CardsCarousel>
       </div>
-      
+      <Testimonial />
+      <Banner />
+      <FAQ />
+      <Footer />
     </div>
   )
 }

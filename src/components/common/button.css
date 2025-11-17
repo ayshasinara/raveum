@@ -44,23 +44,34 @@
 
 .ui-button--outlineBrand {
   background-color: transparent;
-  color: #463fbf;
-  border-color: #463fbf;
+  color: #3f3490;
+  border-color: #3f3490;
 }
 .ui-button--outlineBrand:hover {
-  background-color: rgba(70, 63, 191, 0.08);
-  border-color: #463fbf;
+  background-color: rgba(63, 52, 144, 0.08);
+  border-color: #3f3490;
 }
 
 .ui-button--brand {
-  background-color: #463fbf;
+  background-color: #3f3490;
   color: #ffffff;
-  border-color: #463fbf;
+  border-color: #3f3490;
   box-shadow: 0 1px 0 rgba(0,0,0,0.15);
 }
 .ui-button--brand:hover {
-  background-color: #3e37b0;
-  border-color: #3e37b0;
+  background-color: #352a7a;
+  border-color: #352a7a;
+}
+
+.ui-button--banner {
+  background-color: #3f3490;
+  color: #ffffff;
+  border-color: #3f3490;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.15);
+}
+.ui-button--banner:hover {
+  background-color: #352a7a;
+  border-color: #352a7a;
 }
 
 

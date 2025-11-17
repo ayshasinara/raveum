@@ -22,12 +22,12 @@
   height: 34px;
   border-radius: 50%;
   border: none;
-  background: #463fbf;
+  background: #3f3490;
   color: #ffffff;
   cursor: pointer;
   display: grid;
   place-items: center;
-  box-shadow: 0 4px 12px rgba(70, 63, 191, 0.35);
+  box-shadow: 0 4px 12px rgba(63, 52, 144, 0.35);
 }
 .cardsCarousel__nav--left { left: 8px; }
 .cardsCarousel__nav--right { right: 8px; }

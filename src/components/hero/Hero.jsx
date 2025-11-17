@@ -18,8 +18,7 @@ function Hero() {
             <Button variant="brand" size="md">Get started with $1</Button>
           </div>
           <p className="hero__fineprint">
-            Base Annual Percentage Yield (APY) provided by program banks. Offer
-            and rates subject to change.
+            Base Annual Percentage Yield (APY) provided by program banks.<br /> Base APY as of 11/7/25 and subject to change.
           </p>
         </div>
         <div className="hero__right">

@@ -14,8 +14,11 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar__container">
         <div className="navbar__brand">
-          <div className="navbar__logo" />
-          <div className="navbar__brandText">Wealthfront</div>
+          <img 
+            src="https://www.wealthfront.com/next/contenthash/next/svg/optimized/wordmark-surface-dark.contenthash.0eff70a79bddf191f2be3b9c62051ae9a9c7619e.svg" 
+            alt="Wealthfront" 
+            className="navbar__logoImg"
+          />
         </div>
 
         <div className="navbar__links">
@@ -28,8 +31,8 @@ function Navbar() {
         </div>
 
         <div className="navbar__actions">
-          <Button variant="outline" size="sm">Log in</Button>
-          <Button variant="primary" size="sm">Get started</Button>
+          <Button variant="outline" size="sm" padding="15px 25px" fontSize="16px">Log in</Button>
+          <Button variant="primary" size="sm" padding="15px 25px" fontSize="16px">Get started</Button>
         </div>
       </div>
     </nav>

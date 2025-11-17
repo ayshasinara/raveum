@@ -12,33 +12,25 @@
   align-items: center;
   justify-content: space-between;
   gap: 16px; /* slightly reduced gap */
-  height: 20vh;
+  height: 13vh;
 }
 
 .navbar__brand {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-weight: 800;
-  letter-spacing: 0.2px;
 }
 
-.navbar__logo {
-  width: 26px;
+.navbar__logoImg {
   height: 26px;
-  border-radius: 6px;
-  background: linear-gradient(135deg, #7ad7ff, #b7f0ff);
-}
-
-.navbar__brandText {
-  font-size: 22px;
+  width: auto;
+  display: block;
 }
 
 .navbar__links {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 22px; /* slightly reduced link spacing */
+  gap: 40px; /* slightly reduced link spacing */
 
 }
 
